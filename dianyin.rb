@@ -1,4 +1,4 @@
-
+#coding: utf-8
 require 'open-uri'
 require 'nokogiri'
 
@@ -27,4 +27,6 @@ i = 0
 					end
 	end
 end
-
+# 过程中也熟悉一下ruby的一些http,解析html,
+# 字符编码 和 正则的一些东西-http用到 open-uri 模块, 解析html用的是nokogiri, nokogiri 查找标签用的是 和css中确定标签一样的方式字符转码开始用iconv进行字符转码,
+# 但执行时输出推荐字符串的encode方法,修改. 正则的匹配使用字符串的scan方法 可以返回多个结果, 直接match的话只有一个结果.
